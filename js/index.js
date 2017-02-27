@@ -1,10 +1,7 @@
-var a, b, c; //створюємо 3 змінних
-a = 1;
-b = 0;
-for(var i = 0; i < 20; i++){
-//зсуваємо значення a і b, щоб отримати число з суми двох попередних
-c=a+b;
-a=b;
-b=c;
-alert(c=10);
+function fibonacchi(n){
+  if ( n == 0 ) return 0;
+ 
+  if (n == 1) return 1;
+  return fibonacchi(n-2) + fibonacchi(n-1);
 }
+alert(fibonacchi(10));
